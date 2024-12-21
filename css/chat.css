@@ -1,0 +1,107 @@
+/* Общий стиль для чата */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Шапка чата */
+.chat-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #791b1b;
+    color: white;
+    position: relative;
+}
+
+.chat-header .back-button {
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.chat-header .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.chat-header .chat-name {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+/* Блок сообщений */
+.chat-messages {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+}
+
+.message {
+    max-width: 70%;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1em;
+    word-wrap: break-word;
+}
+
+.message-incoming {
+    background-color: #eeeeee;
+    align-self: flex-start;
+}
+
+.message-outgoing {
+    background-color: #791b1b;
+    color: white;
+    align-self: flex-end;
+}
+
+/* Поле ввода сообщения */
+.chat-footer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff;
+    border-top: 1px solid #eee;
+}
+
+.chat-footer .media-button,
+.chat-footer .send-button {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin: 0 5px;
+    color: #791b1b;
+}
+
+.chat-footer .message-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 1em;
+    outline: none;
+}

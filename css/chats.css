@@ -1,0 +1,88 @@
+/* Общие стили для страницы */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Заголовок */
+header {
+    background-color: #791b1b;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.5em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Контейнер для списка чатов */
+.chat-list {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Каждый чат */
+.chat {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+.chat:hover {
+    background-color: #f0f0f0;
+}
+
+/* Аватарка */
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+/* Информация о чате */
+.chat-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/* Имя собеседника */
+.chat-name {
+    font-size: 1.2em;
+    margin: 0;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Последнее сообщение */
+.last-message {
+    font-size: 0.9em;
+    color: #777;
+    margin: 5px 0 0;
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+    .avatar {
+        width: 40px;
+        height: 40px;
+    }
+
+    .chat-name {
+        font-size: 1em;
+    }
+
+    .last-message {
+        font-size: 0.8em;
+    }
+}
