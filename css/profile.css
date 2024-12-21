@@ -1,0 +1,83 @@
+body {
+    background: url(img\Vector-2.svg);
+}
+
+/* Общий стиль для центрированных блоков */
+.centered-container {
+    width: 100%; /* Родитель занимает всю ширину экрана */
+    max-width: 600px; /* Ограничение ширины */
+    margin: 0 auto; /* Центрирование контейнера */
+}
+
+/* Общий стиль для профиля */
+.user_profile {
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+}
+
+/* Фото профиля */
+.photo_profile {
+    width: 50%;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .photo_profile {
+        width: 80%; /* Уменьшаем ширину изображения */
+    }
+}
+
+/* Информация о пользователе */
+.profile_info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center; /* Выравнивание элементов по вертикали */
+    font-size: 1.2em;
+    text-align: center;
+}
+
+/* Имя и возраст */
+.profile_name, .profile_age {
+    font-size: 3em; /* Размер текста */
+    color: #333; /* Цвет текста */
+    font-family: Arial, sans-serif; /* Шрифт */
+    margin: 0; /* Убираем отступы */
+    padding: 0; /* Убираем внутренние отступы */
+}
+
+/* Описание */
+.description {
+    font-size: 1em;
+    /* text-align: center; */
+    margin: 15px 0;
+}
+
+/* Теги */
+.tags {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.tag-category {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.category-title {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.tag {
+    padding: 5px 10px;
+    font-size: 0.9em;
+    color: rgb(22, 21, 21);
+    border: 1px solid #ece5e5;
+    border-radius: 10px;
+    background-color: #e6dddd;
+    white-space: nowrap;
+}
