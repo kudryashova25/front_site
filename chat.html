@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/chat.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чат</title>
+</head>
+<body>
+    <section class="chat-container">
+        <!-- Шапка чата -->
+        <header class="chat-header">
+            <button class="back-button">&larr;</button>
+            <img src="img/photo_profile_female.jpg" alt="Avatar" class="avatar">
+            <h1 class="chat-name">Маша</h1>
+        </header>
+
+        <!-- Основной блок с сообщениями -->
+        <div class="chat-messages">
+            <div class="message message-incoming">
+                Привет! Как дела?
+            </div>
+            <div class="message message-outgoing">
+                Привет! Всё хорошо, а у тебя?
+            </div>
+            <div class="message message-incoming">
+                Тоже всё отлично, спасибо!
+            </div>
+        </div>
+
+        <!-- Поле ввода сообщения -->
+        <footer class="chat-footer">
+            <button class="media-button">&#128247;</button>
+            <input type="text" class="message-input" placeholder="Введите сообщение...">
+            <button class="send-button">&#9658;</button>
+        </footer>
+    </section>
+</body>
+</html>
